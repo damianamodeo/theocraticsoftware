@@ -1,0 +1,9 @@
+{
+  "name": "tool",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/tool/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project tool --web",
+  "targets": {}
+}

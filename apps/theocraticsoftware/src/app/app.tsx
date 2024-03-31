@@ -1,11 +1,8 @@
-import NxWelcome from './nx-welcome';
+import { TheocraticSoftware } from '@shell';
+import '@styles';
 
 export function App() {
-  return (
-    <div>
-      <NxWelcome title="theocraticsoftware" />
-    </div>
-  );
+  return <TheocraticSoftware></TheocraticSoftware>;
 }
 
 export default App;
