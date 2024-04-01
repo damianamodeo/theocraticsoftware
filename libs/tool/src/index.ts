@@ -11,3 +11,7 @@ export * from './react-pdf/PDFFormatTesting';
 export * from './react-pdf/PDFPage';
 export * from './react-pdf/PDFPageHeading';
 export * from './react-pdf/PDFDivider';
+
+// TIME & DATE
+export * from './timeAndDate/GetIntegerFromDate';
+export * from './timeAndDate/LogDateFromInteger';

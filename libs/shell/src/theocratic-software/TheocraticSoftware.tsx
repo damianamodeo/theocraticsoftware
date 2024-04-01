@@ -1,5 +1,7 @@
 import {
   GetFirestoreDocumentData,
+  GetIntegerFromDate,
+  LogDateFromInteger,
   PDFFormatTesting,
   SubscribeToFirestoreDocumentData,
   WriteTestFirestoreDocumentData,
@@ -13,7 +15,9 @@ export const TheocraticSoftware = () => {
     <SubscribeToFirestoreDocumentData></SubscribeToFirestoreDocumentData>,
     <WriteTestFirestoreDocumentData></WriteTestFirestoreDocumentData>,
     <GetFirestoreDocumentData></GetFirestoreDocumentData>,
-    <PDFFormatTesting></PDFFormatTesting>
+    <PDFFormatTesting></PDFFormatTesting>,
+    <LogDateFromInteger></LogDateFromInteger>,
+    <GetIntegerFromDate></GetIntegerFromDate>
   ];
 
   const options = [
@@ -21,6 +25,8 @@ export const TheocraticSoftware = () => {
     { label: 'Write Test Firestore Doc' },
     { label: 'Get Firestore Document Data' },
     { label: 'PDF Formatting' },
+    { label: 'Log Date From Integer' },
+    { label: 'Get Integer From Date' },
   ];
 
   const handleOnValueChange = (value: number) => {
