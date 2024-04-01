@@ -1,3 +1,6 @@
-export * from './shadcn/source/button';
+export * from './base/Button';
+export * from './base/Input';
+export * from './base/Select';
+export * from './base/Spinner';
 
-export * from './shadcn/components/Select';
+

@@ -4,7 +4,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '../source/select';
+} from '../shadcn/source/select';
 
 export function Select({
   placeholder,
@@ -12,8 +12,8 @@ export function Select({
   onValueChange,
 }: {
   placeholder: string;
-  options: { value: any; label: string | React.ReactNode }[];
-  onValueChange: (value: string) => void;
+  options: { value?: any; label: string | React.ReactNode }[];
+  onValueChange: (value: any) => void;
 }) {
   return (
     <Sel onValueChange={onValueChange}>
@@ -21,9 +21,12 @@ export function Select({
         <SelectValue placeholder={placeholder} />
       </SelectTrigger>
       <SelectContent>
-        {options.map((option) => {
+        {options.map((option, index) => {
           return (
-            <SelectItem value={option.value} key={option.value}>
+            <SelectItem
+              value={option.value ? option.value : index}
+              key={option.value ? option.value : index}
+            >
               {option.label}
             </SelectItem>
           );

@@ -7,7 +7,13 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
 
+    // FILES
     // "**/apps/*/*.*": true,
-    "**/libs/*/*.*": true
+    "**/libs/*/*.*": true,
+
+    // FOLDERS
+    "**/.nx": true,
+    "**/local": true,
+    "**/node_modules": true
   }
 }

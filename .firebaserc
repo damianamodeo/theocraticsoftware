@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "theocratic-software",
+    "demo-1": "demo-1"
+  }
+}
