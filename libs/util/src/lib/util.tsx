@@ -1,18 +1,5 @@
-import styled from 'tailwind';
-
-/* eslint-disable-next-line */
-export interface UtilProps {}
-
-const StyledUtil = styled.div`
-  color: pink;
-`;
-
-export function Util(props: UtilProps) {
+export const Util = () => {
   return (
-    <StyledUtil>
-      <h1>Welcome to Util!</h1>
-    </StyledUtil>
-  );
+    <div>Util</div>
+  )
 }
-
-export default Util;

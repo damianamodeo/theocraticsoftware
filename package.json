@@ -21,7 +21,8 @@
     "rxdb": "^15.16.0",
     "rxjs": "^7.8.1",
     "tailwind-merge": "^2.2.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@nx/eslint": "18.2.1",

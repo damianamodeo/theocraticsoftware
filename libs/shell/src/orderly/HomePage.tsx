@@ -11,7 +11,6 @@ import {
 import { Spinner } from '@ui';
 import { Suspense } from 'react';
 import { path } from './Orderly';
-// import { App } from '@feature';
 
 export const HomePage = () => {
   return (
@@ -26,12 +25,11 @@ export const HomePage = () => {
       </IonHeader>
       <IonContent>
         <Suspense fallback={<Spinner></Spinner>}>
-          {/* <App></App> */}
-          {/* <div className="full centered">
+          <div className="full centered">
             <IonButton routerLink={path.PublisherListPage}>
               Publishers
             </IonButton>
-          </div> */}
+          </div>
         </Suspense>
       </IonContent>
     </IonPage>

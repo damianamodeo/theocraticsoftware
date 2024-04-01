@@ -4,7 +4,7 @@ import '@styles';
 import { HomePage } from './HomePage';
 import { Settings } from './SettingsPage';
 import { useEffect, useState } from 'react';
-// import { PublisherDetailsPage, PublisherListPage } from '@feature';
+import { PublisherDetailsPage, PublisherListPage } from '@feature';
 import { initOrderlyDB, Provider } from '@data';
 
 const content = [
@@ -17,18 +17,18 @@ const content = [
     path: '/home',
     redirect: true,
   },
-  // {
-  //   label: 'PublisherListPage',
-  //   component: PublisherListPage,
-  //   path: '/home/publisher',
-  //   redirect: true,
-  // },
-  // {
-  //   label: 'PublisherDetailsPage',
-  //   component: PublisherDetailsPage,
-  //   path: '/home/publisher/details/:id',
-  //   redirect: true,
-  // },
+  {
+    label: 'PublisherListPage',
+    component: PublisherListPage,
+    path: '/home/publisher',
+    redirect: true,
+  },
+  {
+    label: 'PublisherDetailsPage',
+    component: PublisherDetailsPage,
+    path: '/home/publisher/details/:id',
+    redirect: true,
+  },
   // SETTINGS
   {
     label: 'Settings',

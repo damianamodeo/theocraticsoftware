@@ -19,3 +19,6 @@ export * from './rxdb/hooks/useRxDB';
 export * from './rxdb/hooks/useRxDocumentByID';
 export * from './rxdb/hooks/useRxQuery';
 export * from './rxdb/hooks/Provider';
+
+// ZUSTAND
+export * from './zustand/createSelectors';
