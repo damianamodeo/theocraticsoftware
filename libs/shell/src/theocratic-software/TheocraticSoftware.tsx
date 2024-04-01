@@ -1,5 +1,6 @@
 import {
   GetFirestoreDocumentData,
+  PDFFormatTesting,
   SubscribeToFirestoreDocumentData,
   WriteTestFirestoreDocumentData,
 } from '@tool';
@@ -12,12 +13,14 @@ export const TheocraticSoftware = () => {
     <SubscribeToFirestoreDocumentData></SubscribeToFirestoreDocumentData>,
     <WriteTestFirestoreDocumentData></WriteTestFirestoreDocumentData>,
     <GetFirestoreDocumentData></GetFirestoreDocumentData>,
+    <PDFFormatTesting></PDFFormatTesting>
   ];
 
   const options = [
     { label: 'Subscribe Firestore Document Data' },
     { label: 'Write Test Firestore Doc' },
     { label: 'Get Firestore Document Data' },
+    { label: 'PDF Formatting' },
   ];
 
   const handleOnValueChange = (value: number) => {
