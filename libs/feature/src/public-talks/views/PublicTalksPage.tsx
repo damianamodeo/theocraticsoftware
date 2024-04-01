@@ -1,6 +1,5 @@
 import {
   IonBackButton,
-  IonButton,
   IonButtons,
   IonContent,
   IonHeader,
@@ -8,11 +7,12 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/react';
-import { Spinner } from '@ui';
+import { Button, Spinner } from '@ui';
 import { Suspense } from 'react';
-import { path } from './Orderly';
+import { WeekPicker } from '../components/WeekPicker';
+import { getMondaysForNext26Weeks } from '../helper/getMondaysArray';
 
-export const HomePage = () => {
+export const PublicTalksPage = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -20,18 +20,16 @@ export const HomePage = () => {
           <IonButtons slot="start">
             <IonBackButton></IonBackButton>
           </IonButtons>
-          <IonTitle>Home</IonTitle>
+          <IonTitle>PublicTalksPage</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <Suspense fallback={<Spinner></Spinner>}>
           <div className="full centered">
-            <IonButton routerLink={path.PublisherListPage}>
-              Publishers
-            </IonButton>
-            <IonButton routerLink={path.PublicTalksPage}>
-              Public Talks
-            </IonButton>
+            <Button onClick={() => console.log(getMondaysForNext26Weeks())}>
+              Button
+            </Button>
+            <WeekPicker></WeekPicker>
           </div>
         </Suspense>
       </IonContent>
@@ -39,4 +37,4 @@ export const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default PublicTalksPage;

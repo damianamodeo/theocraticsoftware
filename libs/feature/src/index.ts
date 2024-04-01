@@ -1,6 +1,11 @@
 // PUBLIC TALKS
+export * from './public-talks/components/WeekPicker';
+
+export * from './public-talks/helper/publicTalkTitles';
+
 export * from './public-talks/pdf/PublicTalkPDF';
-export * from './public-talks/publicTalkTitles';
+
+export * from './public-talks/views/PublicTalksPage';
 
 // PUBLISHERS
 export * from './publishers/components/PublisherDetails';

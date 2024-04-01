@@ -1,7 +1,7 @@
 import { Text, Document, View } from '@react-pdf/renderer';
 import { PDFPage, PDFPageHeading, PDFDivider } from '@tool';
 import { schedule } from './mockData';
-import { publicTalkTitles } from '../publicTalkTitles';
+import { publicTalkTitles } from '../helper/publicTalkTitles';
 
 const WeekView = ({ children }: any) => {
   return (

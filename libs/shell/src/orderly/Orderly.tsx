@@ -4,7 +4,7 @@ import '@styles';
 import { HomePage } from './HomePage';
 import { Settings } from './SettingsPage';
 import { useEffect, useState } from 'react';
-import { PublisherDetailsPage, PublisherListPage } from '@feature';
+import { PublicTalksPage, PublisherDetailsPage, PublisherListPage } from '@feature';
 import { initOrderlyDB, Provider } from '@data';
 
 const content = [
@@ -27,6 +27,12 @@ const content = [
     label: 'PublisherDetailsPage',
     component: PublisherDetailsPage,
     path: '/home/publisher/details/:id',
+    redirect: true,
+  },
+  {
+    label: 'PublicTalksPage',
+    component: PublicTalksPage,
+    path: '/home/public-talks',
     redirect: true,
   },
   // SETTINGS
