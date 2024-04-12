@@ -7,6 +7,11 @@ import {
   publishersDocMethods,
   publishersSchema,
 } from './publishers';
+import {
+  scheduleCollectionMethods,
+  scheduleDocMethods,
+  scheduleSchema,
+} from './schedule';
 
 export type OrderlyCollections = {
   publishers: PublishersCollection;
@@ -35,6 +40,16 @@ export const createOrderlyDBCollections = async (
       // },
       methods: publishersDocMethods,
       statics: publishersCollectionMethods,
+    },
+    schedule: {
+      schema: scheduleSchema,
+      // migrationStrategies: {
+      //   1: function (oldDoc) {
+      //     return oldDoc;
+      //   },
+      // },
+      methods: scheduleDocMethods,
+      statics: scheduleCollectionMethods,
     },
   });
 

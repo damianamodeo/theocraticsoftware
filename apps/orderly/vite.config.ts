@@ -3,7 +3,6 @@ import { defineConfig } from 'vite';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import { VitePWA, VitePWAOptions } from 'vite-plugin-pwa';
 import htmlPlugin from 'vite-plugin-html-config';
-import Info from 'unplugin-info/vite';
 
 const APP_NAME = 'Orderly';
 
@@ -67,11 +66,11 @@ const vitePWAOpt: Partial<VitePWAOptions> = {
 };
 
 export default defineConfig({
+  define: { BUILD_TIME: new Date().getTime()},
   plugins: [
     htmlPlugin(htmlPluginOpt),
     react(),
     nxViteTsPaths(),
     VitePWA(vitePWAOpt),
-    Info(),
   ],
 });

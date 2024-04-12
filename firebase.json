@@ -11,5 +11,33 @@
   "firestore": {
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
-  }
+  },
+  "hosting": [
+    {
+      "target": "examples",
+      "public": "dist/apps/examples"
+    },
+    {
+      "target": "orderly",
+      "public": "apps/orderly/dist"
+    },
+    {
+      "target": "orderly-alpha",
+      "public": "dist/apps/theocratic-software/orderly"
+    },
+    {
+      "target": "proclaimer",
+      "public": "dist/apps/theocratic-software/proclaimer"
+    },
+    {
+      "target": "proclaimer-alpha",
+      "public": "dist/apps/theocratic-software/proclaimer"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ]
 }

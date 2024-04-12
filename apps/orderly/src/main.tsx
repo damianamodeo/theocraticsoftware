@@ -14,6 +14,7 @@ if (import.meta.env.DEV) {
 addRxPlugin(RxDBUpdatePlugin);
 addRxPlugin(RxDBMigrationPlugin);
 
+
 const container = document.getElementById('root');
 const root = createRoot(container!);
 root.render(

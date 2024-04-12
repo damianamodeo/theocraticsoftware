@@ -4,8 +4,14 @@ import '@styles';
 import { HomePage } from './HomePage';
 import { Settings } from './SettingsPage';
 import { useEffect, useState } from 'react';
-import { PublicTalksPage, PublisherDetailsPage, PublisherListPage } from '@feature';
-import { initOrderlyDB, Provider } from '@data';
+import {
+  PDFDowloadPage,
+  PublisherDetailsPage,
+  PublisherListPage,
+  WeekDetailsPage,
+  WeeklyScheduleListPage,
+} from '@feature';
+import { initOrderlyDB, Provider, useRxDB } from '@data';
 
 const content = [
   // HOME
@@ -30,9 +36,21 @@ const content = [
     redirect: true,
   },
   {
-    label: 'PublicTalksPage',
-    component: PublicTalksPage,
-    path: '/home/public-talks',
+    label: 'WeeklyScheduleListPage',
+    component: WeeklyScheduleListPage,
+    path: '/home/schedule',
+    redirect: true,
+  },
+  {
+    label: 'WeekDetailsPage',
+    component: WeekDetailsPage,
+    path: '/home/schedule/details/:id',
+    redirect: true,
+  },
+  {
+    label: 'PDFDowloadPage',
+    component: PDFDowloadPage,
+    path: '/home/schedule/pdf-download/',
     redirect: true,
   },
   // SETTINGS

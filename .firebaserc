@@ -2,5 +2,14 @@
   "projects": {
     "default": "theocratic-software",
     "demo-1": "demo-1"
+  },
+  "targets": {
+    "theocratic-software": {
+      "hosting": {
+        "orderly": [
+          "theocraticsoftware"
+        ]
+      }
+    }
   }
 }

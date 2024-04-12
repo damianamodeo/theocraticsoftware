@@ -8,6 +8,7 @@ import {
   IonToolbar,
 } from '@ionic/react';
 import { Spinner } from '@ui';
+import { buildTime } from '@util';
 import { Suspense } from 'react';
 
 export const Settings = () => {
@@ -23,7 +24,9 @@ export const Settings = () => {
       </IonHeader>
       <IonContent>
         <Suspense fallback={<Spinner></Spinner>}>
-          <div className="full centereSpinnerd">Settings</div>
+          <div className="full centered">
+            Build Time: {buildTime.timeDifference}
+          </div>
         </Suspense>
       </IonContent>
     </IonPage>

@@ -4,6 +4,7 @@ import {
   IonButtons,
   IonContent,
   IonHeader,
+  IonList,
   IonPage,
   IonTitle,
   IonToolbar,
@@ -25,14 +26,18 @@ export const HomePage = () => {
       </IonHeader>
       <IonContent>
         <Suspense fallback={<Spinner></Spinner>}>
-          <div className="full centered">
-            <IonButton routerLink={path.PublisherListPage}>
+          <IonList inset>
+            <IonButton routerLink={path.PublisherListPage} expand="block">
               Publishers
             </IonButton>
-            <IonButton routerLink={path.PublicTalksPage}>
-              Public Talks
+            <IonButton routerLink={path.WeeklyScheduleListPage} expand="block">
+              Weekly Schedule
             </IonButton>
-          </div>
+
+            <IonButton routerLink={path.PDFDowloadPage} expand="block">
+              PDF Download
+            </IonButton>
+          </IonList>
         </Suspense>
       </IonContent>
     </IonPage>

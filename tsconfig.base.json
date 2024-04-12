@@ -23,7 +23,8 @@
       "@tool": ["libs/tool/src/index.ts"],
       "@ui": ["libs/ui/src/index.ts"],
       "@util": ["libs/util/src/index.ts"]
-    }
+    },
+    "types": ["unplugin-info/client"]
   },
   "exclude": ["node_modules", "tmp"]
 }
