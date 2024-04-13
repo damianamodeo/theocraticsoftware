@@ -16,6 +16,22 @@ const WeekView = ({ children }: any) => {
 const DateView = ({ meeting }: any) => {
   const date = parseInt(meeting.id) + 1000 * 60 * 60 * 24 * 5;
 
+  if (meeting.weTheme < 1)
+    return (
+      <View
+        style={{
+          fontFamily: 'Helvetica-Bold',
+          fontSize: 14,
+          flex: 2,
+          textAlign: 'right',
+          paddingRight: 8,
+          color: '#4a6da7',
+        }}
+      >
+        <Text>19</Text>
+      </View>
+    );
+
   return (
     <View
       style={{
