@@ -43,3 +43,4 @@ Thumbs.db
 .env
 api-keys.ts
 *.log
+.firebase/
